@@ -1,0 +1,16 @@
+logging:
+  level:
+    ROOT: ERROR
+    org.springframework.web: ERROR
+    fr.simplex_software.micro_services.core: DEBUG
+jms:
+  destination:
+    name: hml.global.topic
+  broker:
+    url: tcp://active-mq:61616
+spring:
+  activemq:
+    packages:
+      trust-all: "true"
+
+
